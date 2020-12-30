@@ -2,27 +2,26 @@
 <html lang="en">
 <head>
 <title>Page Title</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
 * {
   box-sizing: border-box;
 }
-.h4{
-text-align: top left;
-}
 
 
 /* Style the header */
 .header {
-  padding: 1px;
-  text-align: left;
+  display: block;
+  height:100px;
+  width: 100%;
+  text-align: center;
   background: black;
   color: white;
 }
@@ -31,14 +30,37 @@ background:grey;
 padding: 5px 5px;
 }
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
+}
+.button {
+  background-color: #41a044;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size:40px;
+}
+.header-btn-group{
+    top: -100px;
+    background-color: #333;
+    float: right;
+    margin-right: 5px;
+}
+
+.navbar a.right {
+  float: right;
+}
 /* Style the top navigation bar */
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -213,17 +235,36 @@ border-style: groove;
     width:100%;
   }
 }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
 </style>
 </head>
 <body>
 <div class="header">
-<img class="img-responsive" src="logo5.PNG" alt="Chania">
+<img class="img-responsive" src="tex1.PNG" alt="header">
+</div>
+<class="page-header">
+    <div class="btn-group pull-top header-btn-group" role="group">
+        <a href="signup.html" class="button">Sign Up </a> &nbsp;
+        <a href="login.html" class="button">Log In</a> &nbsp;
+      </div>
+    </div>
 </div>
 <style>
 body {
   background-color: black;
 }
 </style>
+<div>
 
 <div class="navbar">
   <a class="active" href="#home">Home</a>
@@ -237,7 +278,6 @@ body {
       <a href="#">Link 3</a>
     </div>
 </div>
-<a href="demo11.html">News</a>
 </div>
 
 <div class="row">
@@ -258,10 +298,10 @@ body {
     <h2><u>Pre-Builts</u></h2><br>
     <center><h4>BUDGET</h4></center>
     <ul="1">
-<h4><li>30,000Rs(Low-End)<br><a href="#"><u>link</u></a></li></h4>
-<h4><li>50,000Rs(Mid-Range)<br><a href="#"><u>link</u></a></li></h4>
-<h4><li>70,000Rs(High-End)<br><a href="#"><u>link</u></a></li></h4>
-<h4><li>1,00,000Rs(Top-End)<br><a href="#"><u>link</u></a></li></h4>
+<h4><li>30,000Rs(Low-End)<br><a href="https://www.nvidia.com/en-in/" class="button">view</li></a></h4>
+<h4><li>50,000Rs(Mid-Range)<br><a href="https://www.nvidia.com/en-in/" class="button">view</li></a></h4>
+<h4><li>70,000Rs(High-End)<br><a href="https://www.nvidia.com/en-in/" class="button">view</li></a></h4>
+<h4><li>1,00,000Rs(Top-End)<br><a href="https://www.nvidia.com/en-in/" class="button">view</li></a></h4>
 </ul>
 </div>
 <div class="main">
@@ -341,14 +381,14 @@ body {
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
 <div class="footer">
-<center><h3><u>About Us</u></h3><br>
-<p>Website developed by team of Jithin,Joel,Kiran in order to help beginner users to choose the correct components for their PC</p>
+<center><h3><u><i>ABOUT US</u></i></h3><br>
+<h5><p>Website developed by team of Jithin,Joel,Kiran in order to help beginner users to choose the correct components for their PC</p></h5>
 
 
 <div class="h4">
-<h3><u>Our social Media Links</u></h3>
-  <a href="#"><i class="fa fa-facebook-official"> Facebook</i></a><br>
-  <a href="#"><i class="fa fa-instagram"> Instagram</i></a><br>
+<h3>Our social Media Links</h3>
+  <a href="https://www.facebook.com/xtra.pc.9"><i class="fa fa-facebook-official"> Facebook</i></a><br>
+  <a href="https://instagram.com/xtra.pc.9"><i class="fa fa-instagram"> Instagram</i></a><br>
   <a href="#"><i class="fa fa-twitter"> Twitter</i></a><br>
 </div>
 <div class="left">
@@ -357,7 +397,8 @@ body {
 <a href="#">FAQ</a><br>
 <a href="#">Terms&Conditions</a><br>
 <a href="#">Privacy Policy</a><br>
-<a href="#"></a>
+<a href="#"></a><br>
+ALL RIGHTS RESERVED.
 </div>
 
 </footer>
